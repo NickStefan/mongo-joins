@@ -100,16 +100,16 @@ async.auto({
         },
         {
           _id: sectionOne,
-          parent_id: null,
-          next_id: null,
+          parent_id: root,
+          next_id: sectionTwo,
           previous_id: null,
           view: 'section'
         },
         {
           _id: sectionTwo,
-          parent_id: null,
+          parent_id: root,
           next_id: null,
-          previous_id: null,
+          previous_id: sectionOne,
           view: 'section'
         },
         {

@@ -21,16 +21,16 @@ Document before aggregation:
         },
         {
           _id: OBJECTIDsectionOne,
-          parent_id: null,
-          next_id: null,
+          parent_id: OBJECTIDroot,
+          next_id: OBJECTIDsectionTwo,
           previous_id: null,
           view: 'section'
         },
         {
           _id: OBJECTIDsectionTwo,
-          parent_id: null,
+          parent_id: OBJECTIDroot,
           next_id: null,
-          previous_id: null,
+          previous_id: OBJECTIDsectionOne,
           view: 'section'
         },
         {
@@ -153,9 +153,9 @@ Document after Aggregation:
                     }
                 },
                 {
-                    "_id": "56e5f6ad2b5bd899a6a1f3f4",
-                    "parent_id": null,
-                    "next_id": null,
+                    "_id": "56e5fa01faa860eda66e16aa",
+                    "parent_id": "56e5fa01faa860eda66e16a9",
+                    "next_id": "56e5fa01faa860eda66e16ab",
                     "previous_id": null,
                     "view": "section",
                     "props": {
@@ -164,10 +164,10 @@ Document after Aggregation:
                     }
                 },
                 {
-                    "_id": "56e5f6ad2b5bd899a6a1f3f5",
-                    "parent_id": null,
+                    "_id": "56e5fa01faa860eda66e16ab",
+                    "parent_id": "56e5fa01faa860eda66e16a9",
                     "next_id": null,
-                    "previous_id": null,
+                    "previous_id": "56e5fa01faa860eda66e16aa",
                     "view": "section",
                     "props": {
                         "image": [],
